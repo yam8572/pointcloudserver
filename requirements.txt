@@ -1,0 +1,6 @@
+flask
+flask-HTTPAuth
+flasgger
+uWSGI
+Werkzeug
+tensorboard
