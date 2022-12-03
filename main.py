@@ -262,3 +262,4 @@ if __name__ == "__main__":
     # from waitress import serve
     # serve(app, host="0.0.0.0", port=8888)
     app.run(host='0.0.0.0', port=8888, debug=True)
+    # cmd 打 waitress-serve --listen=0.0.0.0:8888 wsgi:app (多人連server)
