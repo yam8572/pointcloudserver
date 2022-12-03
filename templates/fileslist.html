@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">{{dir_path}} files list</h3>
+    </div>
+    <hr/>
+    <div>
+        This is a list of the files , 
+        click on them to load/download them
+        <ul>
+            {% for file in files %}
+            <li>
+                <a href="{{url_for('getFilePath', foldername=dir_path, filename=file)}}">{{file}}</a>
+                <a href="{{url_for('visualize3D', foldername=dir_path, filename=file)}}">[show]</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
