@@ -10,10 +10,10 @@ import subprocess
 import time
 import open3d as o3d
 
-# r'路徑'防止字符轉義
-UPLOAD_FOLDER = r'C:\www\pointcloudServer\source'
-DOWNLOAD_FOLDER = r'C:\www\pointcloudServer\result'
-ALLOWED_EXTENSIONS = set(['pcd','ply','3ds','stl','obj','png','jpg','jpeg'])
+# docker 路徑
+UPLOAD_FOLDER = r'/app/source'
+DOWNLOAD_FOLDER = r'/app/result'
+ALLOWED_EXTENSIONS = set(['pcd','ply','3ds','stl','obj'])
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
